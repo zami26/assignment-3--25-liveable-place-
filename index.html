@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@400;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc7e494e47.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'common-color': '#ABEF5F',
+                        'h-color':'#212121',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .mulish {
+            font-family: "Mulish", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="mulish">
+    <header class="md:container md:mx-auto">
+        <div class="navbar  md:flex md:justify-between bg-base-100">
+            <div class="flex flex-row-reverse justify-between">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                      <li><a href="#" class="me-6 py-2 px-3 border-2 border-slat-200 rounded-full"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                      <li><a href="#" class="me-6 py-2 px-3 border-2 border-slat-200 rounded-full"><i class="fa-solid fa-cart-shopping"></i></a> </li>
+                      <li><a class="btn font-bold bg-common-color rounded-3xl ">Book Consult <i class="fa-solid fa-square-arrow-up-right   text-xl ms-none"></i></a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl "><i class="fa-solid fa-square-arrow-up-right text-common-color bg-black border-4 border-common-color "></i> <span class="h-color text-3xl font-bold">Rinterio</span></a>
+            </div>
+            <div class=" hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                      
+              </ul>
+            </div>
+            <div class=" hidden lg:inline">
+                <a href="#" class="me-6 py-2 px-3 border-2 border-slat-200 rounded-full"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="me-6 py-2 px-3 border-2 border-slat-200 rounded-full"><i class="fa-solid fa-cart-shopping"></i></a>         
+              <a class="btn font-bold bg-common-color rounded-3xl ">Book Consult <i class="fa-solid fa-square-arrow-up-right   text-xl "></i></a>
+            </div>
+          </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
