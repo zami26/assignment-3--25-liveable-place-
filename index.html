@@ -53,6 +53,12 @@
     .blue-bg {
       background-color: #77AAEA;
     }
+    .bg-img{
+      background-image: url(assets/bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 10px;
+    }
   </style>
 </head>
 
@@ -287,7 +293,7 @@
     </section>
 
 
-    <section class="md:mt-10 mt-4 bg-main-bg">
+    <section class="md:mt-10 mt-4 bg-main-bg pb-10">
       <div class="text-center pt-5">
         <button class="btn font-bold bg-common-color rounded-3xl mt-8 md:mb-5 mb-2"><i
             class="fa-solid fa-arrow-right"></i> Rinterio News</button>
@@ -368,10 +374,58 @@
       </div>
     </section>
 
+    <section class="bg-img">
+      <div>
+        <div class="text-center pt-5 mb-4">
+          <button class="btn font-bold bg-common-color rounded-3xl mt-8 md:mb-5 mb-2"><i
+              class="fa-solid fa-arrow-right"></i> Let’s Connect</button>
+          <h1 class="text-4xl font-extrabold mb-2">Let’s Discuss Next Project</h1>
+          <p class="md:mx-0 mx-3 ">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, <br>sleek metal accents.
+          </p>
+        </div>
+      </div>
+      <div class="md:container md:mx-auto text-center ">
+        <input type="text" class="rounded-full md:w-1/3 w-5/6 py-3 ps-5 md:me-4 mt-8" placeholder="Your First Name...">
+        <input type="text" class="rounded-full md:w-1/3 w-5/6 py-3 ps-5 mt-8" placeholder="Your Last Name...">
+        <br>        
+        <input type="text" class="rounded-full md:w-1/3 w-5/6 py-3 ps-5 md:me-4 mt-8" placeholder="Your Phone Number...">
+        <input type="text" class="rounded-full md:w-1/3 w-5/6 py-3 ps-5 mt-8" placeholder="Your Email Address...">
+        <br>
+        <textarea 
+  class="md:w-2/3 w-5/6 mt-8 h-40 p-5 border rounded-3xl focus:outline-none focus:ring-2 focus:ring-black resize-none" 
+  placeholder="Type your message here..."
+></textarea> <br>
+<button class="md:w-2/3 w-5/6 btn font-bold bg-common-color rounded-3xl mt-8 md:mb-5 mb-2"> Sent Mail <i
+    class="fa-solid fa-square-arrow-up-right   "></i></button>
+      </div>
+
+    </section>
+
   </main>
 
-  <footer>
+  <footer class="footer bg-black py-24 mt-4 text-center">
+       <div class="mx-auto">
+        <a class="btn btn-ghost text-xl mx-auto"><i
+        class="fa-solid fa-square-arrow-up-right text-common-color bg-black border-4 border-common-color "></i>
+      <span class="h-color text-3xl font-bold text-white">Rinterio</span></a>
+       <p class="text-gray-400 mx-auto">
+        The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.
+       </p>
+       <div > 
+        <ul class="text-gray-400 md:flex md:gap-16  md:ms-0 ms-36">
+          <li class="md:mb-0 mb-3"><a href="">Home</a></li>
+          <li class="md:mb-0 mb-3"><a href="">Services</a></li>
+          <li class="md:mb-0 mb-3"><a href="">Portfolio</a></li>
+          <li class="md:mb-0 mb-3"><a href="">Blogs</a></li>
+          <li class="md:mb-0 mb-3"><a href="">Contact Us</a></li>
+         </ul>
 
+         <button class="md:w-40 w-5/6 btn font-bold bg-common-color rounded-3xl mt-8 md:mb-5 mb-2 md:ms-0 ms-24"> Book Consult <i
+          class="fa-solid fa-square-arrow-up-right   "></i></button>
+       </div>
+       
+    </div>
   </footer>
 
 </body>
